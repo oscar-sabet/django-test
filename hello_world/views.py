@@ -5,11 +5,10 @@ from django.http import HttpResponse
 
 
 def index(request):
-    
+
     if request.method == "GET":
         return HttpResponse(request.method)
         return HttpResponse("This was a GET request")
     elif request.method == "POST":
-        
         return HttpResponse("This was a POST request")
         return HttpResponse("Hello, world. You're at the polls index.")
